@@ -5,19 +5,19 @@ This project involves building an image server to scrape menu images from restau
 
 ### Assumptions
 1. **Restaurant Websites**: The websites of the restaurants in Mumbai will have menu images embedded in HTML with identifiable `img` tags containing URLs to the images.
-   - **Reason**: This is a common practice on many restaurant websites, making it feasible to locate and download images using web scraping techniques.
+   - **Reason**: Since it’s a common practice on many restaurant websites, making it feasible to locate and download images using web scraping techniques.
 
 2. **Image Format**: The menu images will be in a standard format (e.g., JPEG, PNG) and accessible without login or additional authentication.
-   - **Reason**: Simplifies the scraping process and avoids complexities related to image formats and authentication.
+   - **Reason**: Simplifies the scraping process and avoids complexities related to image formats and authentication. For simplicity i have used this.
 
 3. **OCR Compatibility**: The text on the menu images will be in a clear, readable font and in English, making it suitable for OCR processing using Tesseract.
-   - **Reason**: Ensures reliable text extraction as Tesseract works best with clear, printed text.
+   - **Reason**: Ensures reliable text extraction as Tesseract works best with clear, printed text. I have also assumed the language to be English although any other language  can also be set up with the code.
 
 4. **Database Choice**: SQLite is used for simplicity and ease of setup. This can be easily replaced with a more robust database like MySQL or PostgreSQL if needed.
-   - **Reason**: Simplifies the initial development and testing phase. SQLite is lightweight and does not require a separate server setup.
+   - **Reason**: Simplifies the initial development and testing phase.
 
 5. **Flask for API**: Flask is chosen to create a RESTful API for accessing the stored data.
-   - **Reason**: Flask is lightweight, easy to use, and well-suited for small to medium-sized projects.
+   - **Reason**: Since it wasn’t a small sized project, i chose flask as the framework but if the project size increases we can use FastApi or Django if needed.
 
 ### Project Structure
 
